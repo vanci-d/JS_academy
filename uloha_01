@@ -1,0 +1,43 @@
+// A) VYROB FCI POZDRAV
+
+<script>
+
+		function pozdrav (jmeno) {
+
+			console.log('Ahoj ' + jmeno)
+
+		}
+
+		pozdrav('Vašo')
+
+	</script>
+
+
+// B) UPRAV FCI POZDRAV
+
+<script>
+
+		function pozdrav (jmeno, vlastnost) {
+
+			console.log('Ahoj ' + jmeno + ', ty jsi ' + vlastnost + '.')
+
+		}
+
+		pozdrav('Vašo', 'hlupák')
+
+	</script>
+
+
+// C) ZÍSKEJ JMÉNO PŘES PROMPT
+
+<script>
+
+		function pozdrav (jmeno) {
+
+			console.log('Ahoj ' + jmeno)
+
+		}
+
+		pozdrav(prompt('Zadej své jméno'))
+
+	</script>
