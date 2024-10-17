@@ -40,4 +40,90 @@
 
 		pozdrav(prompt('Zadej své jméno'))
 
-	</script>
+</script>
+
+
+// D) vytvor fci plus, ktera dostane 2 argumenty
+
+function plus(a, b) {
+	return a + b;
+}
+
+console.log(plus(6, 5));
+
+
+// E) posli do fce 2 cisla pres prompt
+
+function plus(a, b) {
+	return a + b;
+}
+a = Number(prompt("Zadej první číslo"));
+b = Number(prompt("Zadej druhý číslo"));
+
+console.log(plus(a, b));
+
+
+// F) Fce ktera dostane 2 argumenty, pocet produktu a cenu jednoho
+
+function naformatujSumu(a, b) {
+	return a * b;
+}
+
+a = 5;
+b = 6.245;
+
+celkovaSuma = naformatujSumu(a, b);
+celkovaSuma = celkovaSuma.toFixed(2);
+
+console.log(
+	"Koupil si " + a + " produkty za celkovou cenu " + celkovaSuma + " Kč"
+);
+
+
+// H) fce discount
+
+function discount(a, b) {
+	return a - (a * b) / 100;
+}
+
+let a = 1000;
+let b = 50;
+let cenaPoSleve = discount(a, b);
+cenaPoSleve = cenaPoSleve.toFixed(2);
+
+console.log("Cena po slevě je " + cenaPoSleve + " Kč");
+
+// F) fce s měnou 
+
+	function discount (a, b) {
+			let sleva = a - a * (b / 100)
+			return sleva.toFixed(2)
+		}
+
+
+		let vysledek = discount(1000, 10)
+		let mena = ('USD')
+
+
+		function naformatujSumu () {
+
+			let vysledekPoZmene = 0
+
+			if (mena == 'CZK') {
+				vysledekPoZmene = vysledek * 1
+			}
+			else if (mena == 'USD') {
+				vysledekPoZmene = vysledek * 0.043
+			}
+			else if (mena == 'EUR') {
+				vysledekPoZmene = vysledek * 0.039
+			}
+			else {
+				console.log('Napis jinou menu')
+			}
+
+			return vysledekPoZmene.toFixed(2)
+		}
+
+
+		console.log('Cena po slevě ' + naformatujSumu() + ' ' + mena);
